@@ -5,7 +5,7 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task0", "Task0", "{6A2D6853-A126-4C90-836E-7DFEEACC3EBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.ErmakovAA.Sprint1.Task0.V5", "Tyuiu.ErmakovAA.Sprint1.Task0.V0\Tyuiu.ErmakovAA.Sprint1.Task0.V5.csproj", "{57CB3A5B-CCC2-4469-9D48-8A6E8CC18F64}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.ErmakovAA.Sprint2.Task0.V5", "Tyuiu.ErmakovAA.Sprint1.Task0.V0\Tyuiu.ErmakovAA.Sprint2.Task0.V5.csproj", "{57CB3A5B-CCC2-4469-9D48-8A6E8CC18F64}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.ErmakovAA.Sprint2.Task0.V5.Lib", "Tyuiu.ErmakovAA.Sprint2.Task0.V0.Lib\Tyuiu.ErmakovAA.Sprint2.Task0.V5.Lib.csproj", "{8EFB5709-7BC2-468C-90AE-6F5E6E20F4C6}"
 EndProject
