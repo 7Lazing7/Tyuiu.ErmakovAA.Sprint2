@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Tyuiu.ErmakovAA.Sprint2.Task0.V0.Lib\Tyuiu.ErmakovAA.Sprint2.Task0.V5.Lib.csproj" />
+    <ProjectReference Include="..\Tyuiu.ErmakovAA.Sprint2.Task0.V5.Lib\Tyuiu.ErmakovAA.Sprint2.Task0.V5.Lib.csproj" />
   </ItemGroup>
 
 </Project>

@@ -9,9 +9,9 @@ namespace Tyuiu.ErmakovAA.Sprint2.Task0.V5.Test
         {
             DataService ds = new DataService();
             int x = 105;
-            int y = 223; 
+            int y = 223;
             bool[] res = new bool[6];
-            res = ds.GetCompareOperations (x, y);
+            res = ds.GetCompareOperations(x, y);
             bool[] wait = new bool[6] { false, true, true, true, false, true };
             CollectionAssert.AreEqual(wait, res);
         }
