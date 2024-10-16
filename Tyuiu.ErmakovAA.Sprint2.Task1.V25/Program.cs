@@ -18,8 +18,8 @@ namespace Tyuiu.ErmakovAA.Sprint2.Task1.V25
             Console.WriteLine("*******************************************************************************************");
             Console.WriteLine("* Спринт #2                                                                               *");
             Console.WriteLine("* Тема: Создание итогового решения по спринту                                             *");
-            Console.WriteLine("* Задание #0                                                                              *");
-            Console.WriteLine("* Вариант #5                                                                              *");
+            Console.WriteLine("* Задание #1                                                                              *");
+            Console.WriteLine("* Вариант #25                                                                              *");
             Console.WriteLine("* Выполгил: Ермаков А.А.                                                                  *");
             Console.WriteLine("*******************************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                                *");
