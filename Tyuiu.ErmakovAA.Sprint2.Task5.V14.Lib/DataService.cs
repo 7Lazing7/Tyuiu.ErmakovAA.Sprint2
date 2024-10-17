@@ -6,7 +6,6 @@ namespace Tyuiu.ErmakovAA.Sprint2.Task5.V14.Lib
         public string FindDayName(int k, int d)
         {
                 
-              //  string[] DayName = { "понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье" };
             string res;
             switch (d)
             {
@@ -35,12 +34,7 @@ namespace Tyuiu.ErmakovAA.Sprint2.Task5.V14.Lib
                 default:
                     throw new ArgumentException($"День недели должен быть от 1 до 7.Значение {d}");
             }
-            
-
-           // if (k < 1 || k > 365 || d < 1 || d > 7)
-           // {
-           //     Console.WriteLine("Некорректные входные данные.");
-           // }     
+               
                
                 int dayIndex = (d - 1 + (k - 1)) % 7;
 
