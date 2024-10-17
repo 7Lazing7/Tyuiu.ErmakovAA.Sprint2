@@ -28,7 +28,7 @@ namespace Tyuiu.ErmakovAA.Sprint2.Task6.V9
                     Console.WriteLine("Ошибка: Введите некорректное числовое значение.");
                 }
 
-                Console.ReadLine(); 
+                 
 
             }
         }
