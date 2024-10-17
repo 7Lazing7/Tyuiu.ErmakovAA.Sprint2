@@ -35,7 +35,23 @@ namespace Tyuiu.ErmakovAA.Sprint2.Task6.V9.Lib
                         throw new ArgumentException($"День месяца должен быть от 1 до 12.Значение {m}");
                 }
 
+                if (m < 1 || n > 12 || m < 1 || n > DateTime.DaysInMonth(2024, m))
+                {
+                    throw new ArgumentOutOfRangeException("Неверные значения месяца или дня");
+                }
+                if (n < daysInMonth)
+                {
+                    return ($"{m}/{n + 1}");
+                }
+                else if (n == 12)
+                {
 
+                    return ($"1/1");
+                }
+                else
+                {
+                    return ($"{m + 1}/1");
+                }
                 if (m < 1 || n > 12 || m < 1 || n > DateTime.DaysInMonth(2024, m))
                 {
                     throw new ArgumentOutOfRangeException("Неверные значения месяца или дня");
