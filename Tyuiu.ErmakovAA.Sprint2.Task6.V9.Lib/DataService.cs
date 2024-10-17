@@ -9,23 +9,37 @@ namespace Tyuiu.ErmakovAA.Sprint2.Task6.V9.Lib
 
                 int daysInMonth;
 
+                if (m < 1 || n > 12 || m < 1 || n > DateTime.DaysInMonth(2024, m)) // Предположим, что у нас 2023 год
+                {
+                    throw new ArgumentOutOfRangeException("Неверные значения месяца или дня");
+                }
+
+                DateTime date = new DateTime(2023, m, n);
+                DateTime nextDay = date.AddDays(1);
+
+                // Форматируем дату как MM.dd
+                return nextDay.ToString("MM.dd");
+            }
+        }
+    }
+}
+                /*
+
                 switch (m)
                 {
-                    case 1: return "Январь";
-                    case 3: return "Март";
-                    case 5: return "Май";
-                    case 7: return "Июль";
-                    case 8: return "Август ";
-                    case 10: return "Октябрь ";
-                    case 12:
-                        return "Декабрь ";
+                    case 1: return "1";
+                    case 3: return "3";
+                    case 5: return "5";
+                    case 7: return "7";
+                    case 8: return "8 ";
+                    case 10: return "10 ";
+                    case 12:return "12 ";
                         daysInMonth = 31; break;
 
-                    case 4: return "Апрель";
-                    case 6: return "Июнь";
-                    case 9: return "Сентябрь ";
-                    case 11:
-                        return "Ноябрь ";
+                    case 4: return "4";
+                    case 6: return "6";
+                    case 9: return "9 ";
+                    case 11:return "11 ";
                         daysInMonth = 30; break;
 
                     case 2:

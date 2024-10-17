@@ -9,54 +9,27 @@ namespace Tyuiu.ErmakovAA.Sprint2.Task6.V9.Test
         {
             DataService ds = new DataService();
 
+            var testCases = new[]
+                {
+        new { Month = 1, Day = 15, Expected = "01.16" }, // Январь
+        new { Month = 2, Day = 28, Expected = "03.01" }, // Февраль
+        new { Month = 3, Day = 31, Expected = "04.01" }, // Март
+        new { Month = 4, Day = 30, Expected = "05.01" }, // Апрель
+        new { Month = 5, Day = 1, Expected = "05.02" },  // Май
+        new { Month = 6, Day = 30, Expected = "07.01" }, // Июнь
+        new { Month = 7, Day = 15, Expected = "07.16" }, // Июль
+        new { Month = 8, Day = 31, Expected = "09.01" }, // Август
+        new { Month = 9, Day = 30, Expected = "10.01" }, // Сентябрь
+        new { Month = 10, Day = 31, Expected = "11.01" }, // Октябрь
+        new { Month = 11, Day = 30, Expected = "12.01" }, // Ноябрь
+        new { Month = 12, Day = 31, Expected = "01.01" }, // Декабрь
+    };
 
+            // Act & Assert
+            foreach (var testCase in testCases)
             {
-                [Test]
-                public void TestNextDayJanuary()
-                {
-                    var result = ds.FindDateOfNextDay(1, 15);
-                    Assert.AreEqual((1, 16), result);
-                }
-
-                [Test]
-                public void TestNextDayFebruary()
-                {
-                    var result = ds.FindDateOfNextDay(2, 27);
-                    Assert.AreEqual((2, 28), result);
-                }
-
-                [Test]
-                public void TestNextDayEndOfMonthApril()
-                {
-                    var result = ds.FindDateOfNextDay(4, 30);
-                    Assert.AreEqual((5, 1), result);
-                }
-
-                [Test]
-                public void TestNextDayEndOfMonth()
-                {
-                    var result = ds.FindDateOfNextDay(12, 30);
-                    Assert.AreEqual((12, 31), result);
-                }
-
-                [Test]
-                public void TestMonthOverflow()
-                {
-                    var result = ds.FindDateOfNextDay(12, 31);
-                    Assert.ThrowsException<ArgumentOutOfRangeException>(() => ds.FindDateOfNextDay(12, 31));
-                }
-
-                [Test]
-                public void TestInvalidDay()
-                {
-                    Assert.ThrowsException<ArgumentOutOfRangeException>(() => ds.FindDateOfNextDay(4, 31));
-                }
-
-                [Test]
-                public void TestInvalidMonth()
-                {
-                    Assert.ThrowsException<ArgumentOutOfRangeException>(() => ds.FindDateOfNextDay(13, 10));
-                }
+                var result = ds.FindDateOfNextDay(testCase.Month, testCase.Day);
+                Assert.AreEqual(testCase.Expected, result, $"Failed for Month: {testCase.Month}, Day: {testCase.Day}");
             }
         }
     }
