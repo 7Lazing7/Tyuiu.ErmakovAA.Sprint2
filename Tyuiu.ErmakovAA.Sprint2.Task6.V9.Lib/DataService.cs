@@ -5,21 +5,17 @@ namespace Tyuiu.ErmakovAA.Sprint2.Task6.V9.Lib
     {
         public string FindDateOfNextDay(int m, int n)
         {
-            {
-
-                int daysInMonth;
-
-                if (m < 1 || n > 12 || m < 1 || n > DateTime.DaysInMonth(2024, m)) // Предположим, что у нас 2023 год
+                if (m < 1 || n > 12 || m < 1 || n > DateTime.DaysInMonth(2024, m))
                 {
                     throw new ArgumentOutOfRangeException("Неверные значения месяца или дня");
                 }
 
-                DateTime date = new DateTime(2023, m, n);
+                DateTime date = new DateTime(2024, m, n);
                 DateTime nextDay = date.AddDays(1);
 
-                // Форматируем дату как MM.dd
+                
                 return nextDay.ToString("MM.dd");
-            }
+           
         }
     }
 }
