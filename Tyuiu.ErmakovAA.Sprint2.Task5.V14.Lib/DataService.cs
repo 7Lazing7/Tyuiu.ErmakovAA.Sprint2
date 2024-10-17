@@ -42,4 +42,3 @@ namespace Tyuiu.ErmakovAA.Sprint2.Task5.V14.Lib
             }
         }
 }
- 
