@@ -34,5 +34,3 @@ namespace Tyuiu.ErmakovAA.Sprint2.Task6.V9
         }
     }
 }
-
- 
