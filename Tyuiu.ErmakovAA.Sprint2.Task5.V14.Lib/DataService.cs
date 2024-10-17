@@ -23,13 +23,13 @@ namespace Tyuiu.ErmakovAA.Sprint2.Task5.V14.Lib
                     res = "Четверг";
                     break;
                 case 5:
-                    res = "Пятница";
+                    res = "Воскресенье";
                     break;
                 case 6:
                     res = "Суббота";
                     break;
                 case 7:
-                    res = "Воскресенье";
+                    res = "Пятница"; 
                     break;
 
                 default:
