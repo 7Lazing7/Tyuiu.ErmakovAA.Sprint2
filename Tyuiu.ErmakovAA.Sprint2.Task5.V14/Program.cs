@@ -24,9 +24,9 @@ namespace Tyuiu.ErmakovAA.Sprint2.Task5.V14
                 res = " день года является: " + ds.FindDayName(k,d);
             }
 
-            
+            int dayIndex = (d - 1 + (k - 1)) % 7;
 
-            Console.WriteLine(d);
+            Console.WriteLine(dayIndex);
 
         }
     }
