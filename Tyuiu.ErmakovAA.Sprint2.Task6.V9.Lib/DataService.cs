@@ -156,7 +156,8 @@ namespace Tyuiu.ErmakovAA.Sprint2.Task6.V9.Lib
                     }
 
             }
-            result += day + "." + month;
+            result += day +  "." + month;
+
             return result;
         }
     }
