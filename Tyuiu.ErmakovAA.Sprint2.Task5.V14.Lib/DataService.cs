@@ -7,7 +7,7 @@ namespace Tyuiu.ErmakovAA.Sprint2.Task5.V14.Lib
         {
                 
             string res;
-            switch (k)
+            switch (d)
             {
                 case 1:
                     res = "Понедельник";
@@ -22,21 +22,21 @@ namespace Tyuiu.ErmakovAA.Sprint2.Task5.V14.Lib
                     res = "Четверг";
                     break;
                 case 5:
-                    res = "Пятница"; //Пятница
+                    res = "Пятница"; 
                     break;
                 case 6:
                     res = "Суббота";
                     break;
                 case 7:
-                    res = "Воскресенье"; //Воскресенье
+                    res = "Воскресенье"; 
                     break;
 
                 default:
-                    throw new ArgumentException($"День недели должен быть от 1 до 7.Значение {k}");
+                    throw new ArgumentException($"День недели должен быть от 1 до 7.Значение {d}");
             }
                
                
-                int dayIndex = (d - 1 + (k - 1)) % 7;
+                int dayIndex = (k - 1 + (d - 1)) % 7;
 
                 return res; 
             }
