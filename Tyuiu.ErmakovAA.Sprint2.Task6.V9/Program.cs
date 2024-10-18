@@ -24,7 +24,7 @@ namespace Tyuiu.ErmakovAA.Sprint2.Task6.V9
             }
             else
             {
-                res = "Дата следующего дня: " + ds.FindDateOfNextDay(x + 1, y - 1);
+                res = "Дата следующего дня: " + ds.FindDateOfNextDay(x, y);
             }
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");

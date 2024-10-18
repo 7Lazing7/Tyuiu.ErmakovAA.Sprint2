@@ -9,7 +9,7 @@ namespace Tyuiu.ErmakovAA.Sprint2.Task6.V9.Lib
             string result = "";
             string month = "";
             string day = "";
-            switch (n)
+            switch (m)
             {
                 case 1:
                     {
@@ -73,11 +73,11 @@ namespace Tyuiu.ErmakovAA.Sprint2.Task6.V9.Lib
                     }
                 default:
                     {
-                        throw new ArgumentException($"Месяц должен быть от 1 до 12. Значение {n}");
+                        throw new ArgumentException($"Месяц должен быть от 1 до 12. Значение {m}");
                     }
 
             }
-            switch (m)
+            switch (n)
             {
                 case 1:
                     {
@@ -147,12 +147,12 @@ namespace Tyuiu.ErmakovAA.Sprint2.Task6.V9.Lib
                 case 30:
                 case 31:
                     {
-                        day = Convert.ToString(m + 1);
+                        day = Convert.ToString(n + 1);
                         break;
                     }
                 default:
                     {
-                        throw new ArgumentException($"День должен быть от 1 до 31. Значение {m}");
+                        throw new ArgumentException($"День должен быть от 1 до 31. Значение {n}");
                     }
 
             }
