@@ -13,12 +13,12 @@ namespace Tyuiu.ErmakovAA.Sprint2.Task6.V9.Lib
             {
                 case 1:
                     {
-                         month = "01";
+                        month = "01";
                         break;
                     }
                 case 2:
                     {
-                         month = "02";
+                        month = "02";
                         break;
                     }
                 case 3:
@@ -75,8 +75,8 @@ namespace Tyuiu.ErmakovAA.Sprint2.Task6.V9.Lib
                     {
                         throw new ArgumentException($"Месяц должен быть от 1 до 12. Значение {n}");
                     }
-            }
 
+            }
             switch (m)
             {
                 case 1:
@@ -144,22 +144,20 @@ namespace Tyuiu.ErmakovAA.Sprint2.Task6.V9.Lib
                 case 27:
                 case 28:
                 case 29:
-                case 30:       
+                case 30:
                 case 31:
                     {
                         day = Convert.ToString(m + 1);
                         break;
                     }
-                default: 
-                    { 
-                        throw new ArgumentException($"День должен быть от 1 до 31. Значение {m}"); 
+                default:
+                    {
+                        throw new ArgumentException($"День должен быть от 1 до 31. Значение {m}");
                     }
-                   
-            }
 
+            }
             result += day + "." + month;
             return result;
         }
     }
 }
-            
